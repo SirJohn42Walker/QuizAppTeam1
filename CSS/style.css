@@ -64,10 +64,53 @@ a {
 .testcard {
   width: 200px;
   height: 200px;
+
+main div {
+
+  width: 300px;
+  height: 229px;
+
   border: 2px solid black;
   display: flex;
   justify-content: center;
   margin-inline: auto;
+  align-items: center;
+  flex-direction: column;
+}
+.Showanswer {
+  height: 40px;
+  width: 200px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 8px 8px;
+  transition-duration: 1s;
+  background-color: orange;
+  border: 5px solid skyblue;
+  color: whitesmoke;
+}
+.Showanswer:hover {
+  font-size: 17px;
+  width: 210px;
+  box-shadow: 4px 4px 4px 4px goldenrod;
+}
+.Categories {
+  align-self: flex-start;
+  width: 70px;
+  background-color: #2965f1;
+  color: white;
+  cursor: pointer;
+}
+#Button_Option1,
+#Button_Option2,
+#Button_Option3 {
+  margin-top: 15px;
+  color: white;
+  background-color: #f06529;
+}
+.Bookmarks {
+  align-self: flex-end;
+  margin-top: -8px;
+  margin-right: 20px;
 }
 
 .text {
