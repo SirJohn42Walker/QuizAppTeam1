@@ -1,5 +1,12 @@
 @import url(components/darkmode-toggle.css);
 
+:root {
+  --bg-color: rgb(188, 223, 225);
+  --accent-color: rgb(125, 189, 192);
+  --highlight-color1: rgb(125, 189, 192);
+  --highlight-color2: rgb(125, 189, 192);
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -7,13 +14,19 @@ body {
   margin: 0;
   padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: var(--bg-color);
+}
+
+h1 {
+  color: white;
 }
 
 #fixedHeader {
   position: fixed;
-  background-color: orange;
+  background-color: var(--accent-color);
   width: 100vw;
-  padding: 10px;
+  height: 80px;
+  /*padding-top: 5px;*/
   text-align: center;
   z-index: 1;
   top: 0;
@@ -22,9 +35,10 @@ body {
 #fixedFooter {
   width: 100vw;
   bottom: 0;
+  height: 80px;
   position: fixed;
   z-index: 1;
-  background-color: aqua;
+  background-color: var(--accent-color);
 }
 
 nav ul {
@@ -39,16 +53,27 @@ a {
   color: black;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.testcard {
+  width: 200px;
+  height: 200px;
+
 main div {
 
   width: 300px;
   height: 229px;
+
   border: 2px solid black;
   display: flex;
   justify-content: center;
   margin-inline: auto;
-  
-
   align-items: center;
   flex-direction: column;
 }
@@ -86,4 +111,8 @@ main div {
   align-self: flex-end;
   margin-top: -8px;
   margin-right: 20px;
+}
+
+.text {
+  text-align: center;
 }
