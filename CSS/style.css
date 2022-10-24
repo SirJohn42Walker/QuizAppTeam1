@@ -3,7 +3,7 @@
 :root {
   --bg-color: rgb(188, 223, 225);
   --accent-color: rgb(125, 189, 192);
-  --highlight-color1: rgb(125, 189, 192);
+  --highlight-color1: rgb(209, 204, 153);
   --highlight-color2: rgb(125, 189, 192);
 }
 
@@ -59,7 +59,7 @@ a {
   flex-direction: column;
   gap: 50px;
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 140px;
 }
 
 .testcard {
@@ -123,4 +123,15 @@ main div {
   padding: 20px;
   background-color: var(--bg-color);
   border-radius: 100%;
+}
+
+.icon:hover {
+  border-radius: 25%;
+  transition: all 0.3s ease-in;
+  background-color: var(--highlight-color1);
+}
+.icon:active {
+  transition: all 0.3s ease-in;
+  background-color: rgb(231, 228, 197);
+  box-shadow: 3px 3px 7px rgb(10, 67, 94) inset;
 }
