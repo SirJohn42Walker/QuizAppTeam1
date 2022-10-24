@@ -64,7 +64,11 @@ a {
 .testcard {
   width: 200px;
   height: 200px;
+<<<<<<< HEAD
   border: black;
+=======
+}
+>>>>>>> main
 
   main div {
   width: 300px;
