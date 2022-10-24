@@ -1,0 +1,20 @@
+#fixedFooter {
+  width: 100vw;
+  bottom: 0;
+  height: 80px;
+  position: fixed;
+  z-index: 1;
+  background-color: var(--accent-color);
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  font-size: 30px;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+} /*This is probably fine for this app, but in bigger projects we would pretty soon find out that we might need anchor elements for other stuff as well...*/
