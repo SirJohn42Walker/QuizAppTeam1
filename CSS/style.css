@@ -64,12 +64,11 @@ a {
 .testcard {
   width: 200px;
   height: 200px;
+  border: black;
 
-main div {
-
+  main div {
   width: 300px;
   height: 229px;
-
   border: 2px solid black;
   display: flex;
   justify-content: center;
@@ -77,6 +76,7 @@ main div {
   align-items: center;
   flex-direction: column;
 }
+
 .Showanswer {
   height: 40px;
   width: 200px;
@@ -115,4 +115,11 @@ main div {
 
 .text {
   text-align: center;
+}
+
+.quatsch {
+  border: #f06529;
+  background-color: blue;
+  width: 300px;
+  height: 300px;
 }
