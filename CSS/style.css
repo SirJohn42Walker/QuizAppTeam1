@@ -3,7 +3,7 @@
 :root {
   --bg-color: rgb(188, 223, 225);
   --accent-color: rgb(125, 189, 192);
-  --highlight-color1: rgb(125, 189, 192);
+  --highlight-color1: rgb(209, 204, 153);
   --highlight-color2: rgb(125, 189, 192);
 }
 
@@ -25,7 +25,7 @@ h1 {
   position: fixed;
   background-color: var(--accent-color);
   width: 100vw;
-  height: 80px;
+  height: 60px;
   /*padding-top: 5px;*/
   text-align: center;
   z-index: 1;
@@ -36,6 +36,7 @@ h1 {
   width: 100vw;
   bottom: 0;
   height: 80px;
+  padding-bottom: 4vh;
   position: fixed;
   z-index: 1;
   background-color: var(--accent-color);
@@ -58,19 +59,15 @@ a {
   flex-direction: column;
   gap: 50px;
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 140px;
 }
 
 .testcard {
   width: 200px;
   height: 200px;
-<<<<<<< HEAD
-  border: black;
-=======
 }
->>>>>>> main
 
-  main div {
+main div {
   width: 300px;
   height: 229px;
   border: 2px solid black;
@@ -121,9 +118,20 @@ a {
   text-align: center;
 }
 
-.quatsch {
-  border: #f06529;
-  background-color: blue;
-  width: 300px;
-  height: 300px;
+.icon {
+  width: 30px;
+  padding: 20px;
+  background-color: var(--bg-color);
+  border-radius: 100%;
+}
+
+.icon:hover {
+  border-radius: 25%;
+  transition: all 0.3s ease-in;
+  background-color: var(--highlight-color1);
+}
+.icon:active {
+  transition: all 0.3s ease-in;
+  background-color: rgb(231, 228, 197);
+  box-shadow: 3px 3px 7px rgb(10, 67, 94) inset;
 }
