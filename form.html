@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="CSS/headerAndFooter.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script src="./new-card.js" defer></script>
+  </head>
+  <body>
+    <header id="fixedHeader">
+      <h1>Quiz App</h1>
+    </header>
+
+    <main class="main">
+      <form data-js="form">
+        <label for="question">Füge eine Frage hinzu:</label>
+        <textarea
+          id="question"
+          rows="7"
+          name="question"
+          maxlength="150"
+          data-js="input-question"
+        ></textarea>
+
+        <label for="answer">Antwort:</label>
+        <textarea
+          id="answer"
+          rows="7"
+          name="answer"
+          maxlength="150"
+          data-js="input-answer"
+        ></textarea>
+
+        <label for="tags">Tags:</label>
+        <input id="tags" type="text" name="tags" data-js="input-tag" />
+        <button class="form__submit-button" type="submit">
+          Frage hinzufügen
+        </button>
+      </form>
+
+      <ul class="card-list" data-js="card-container"></ul>
+    </main>
+    <footer id="fixedFooter">
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html"
+              ><img src="icons/zuhause.png" alt="Home" class="icon"
+            /></a>
+          </li>
+          <li>
+            <a href="bookmark.html"
+              ><img
+                src="icons/archiv-black-box.png"
+                alt="Bookmarks"
+                class="icon"
+            /></a>
+          </li>
+          <li>
+            <a href="form.html"
+              ><img
+                src="icons/archiv-black-box.png"
+                alt="Bookmarks"
+                class="icon"
+            /></a>
+          </li>
+          <li>
+            <a href="profile-page.html"
+              ><img src="icons/benutzerform.png" alt="Profile" class="icon"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
