@@ -7,6 +7,7 @@
     <title>Quiz App</title>
     <link rel="stylesheet" href="CSS/headerAndFooter.css" />
     <link rel="stylesheet" href="CSS/style.css" />
+    <script src="./JS/bookmarkpage.js" type="module"></script>
   </head>
   <body>
     <header id="fixedHeader">
@@ -21,44 +22,7 @@
           Fragen gespeichert.
         </p>
       </article>
-      <div class="first">
-        <p class="Bookmarks">😀</p>
-        <p>
-          Hier findest du deine gespeicherten Fragen. Bisher hast du keine
-          Fragen gespeichert.
-        </p>
-        <button class="Showanswer">Show Answer</button>
-        <button class="Categories" id="Button_Option1">
-          #HTML <button class="Categories">#Flexbox</button
-          ><button class="Categories">#CSS</button>
-        </button>
-      </div>
-      <br />
-      <div class="second">
-        <p class="Bookmarks">😀</p>
-        <p>
-          Hier findest du deine gespeicherten Fragen. Bisher hast du keine
-          Fragen gespeichert.
-        </p>
-        <button class="Showanswer">Show Answer</button>
-        <button class="Categories" id="Button_Option2">
-          #HTML <button class="Categories">#Flexbox</button
-          ><button class="Categories">#CSS</button>
-        </button>
-      </div>
-      <br />
-      <div class="third">
-        <p class="Bookmarks">😀</p>
-        <p>
-          Hier findest du deine gespeicherten Fragen. Bisher hast du keine
-          Fragen gespeichert.
-        </p>
-        <button class="Showanswer">Show Answer</button>
-        <button class="Categories" id="Button_Option3">
-          #HTML <button class="Categories">#Flexbox</button
-          ><button class="Categories">#CSS</button>
-        </button>
-      </div>
+      <section data-js="card-list"></section>
     </main>
     <footer id="fixedFooter">
       <nav>

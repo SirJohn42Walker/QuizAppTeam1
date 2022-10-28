@@ -13,7 +13,7 @@ form.addEventListener("submit", (event) => {
 
   questionInput = document.createElement();
   answerInput = document.createElement();
-  tCagInput = document.createElement();
+  tagInput = document.createElement();
 
   const newCard = document.createElement("li");
   newCard.append();
