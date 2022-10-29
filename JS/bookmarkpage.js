@@ -1,4 +1,4 @@
-import { Card } from "./components/Card/Card.js";
+import { Card } from "./components/Card/Card.js"; //Card ist die Funktion aus der entsprechenden js-Datei.
 console.log("Hallo Welt");
 const cardList = document.querySelector('[data-js="card-list"]');
 cardList.append(
