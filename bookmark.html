@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
+    <script src="/JS/index.js" defer></script>
+    <script type="module" src="/JS/bookmark.js" defer></script>
     <link rel="stylesheet" href="CSS/headerAndFooter.css" />
     <link rel="stylesheet" href="CSS/style.css" />
-    <script src="/JS/index.js"></script>
-    <script type="module" src="/JS/bookmark.js"></script>
   </head>
   <body>
     <header id="fixedHeader">
@@ -50,11 +50,13 @@
           class="bookmarks_unclicked"
           data-js="bookmark"
         />
-        <p>
+        <p class="hidden" data-js="question_text">
           Hier findest du deine gespeicherten Fragen. Bisher hast du keine
           Fragen gespeichert.
         </p>
-        <button class="Showanswer">Show Answer</button>
+        <button class="Showanswer" data-js="showanswer_button">
+          Show Answer
+        </button>
         <button class="Categories" id="Button_Option2">
           #HTML <button class="Categories">#Flexbox</button
           ><button class="Categories">#CSS</button>

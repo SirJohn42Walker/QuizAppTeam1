@@ -1,20 +1,20 @@
 // bookmark functionality
 
-const bookmark = document.querySelectorAll('[data-js="bookmark"]');
+const bookmark = document.querySelector('[data-js="bookmark"]');
 
-bookmark.onClick = () => {
+bookmark.addEventListener("click", () => {
   if (bookmark.classList === "bookmarks_unclicked") {
-    bookmark.value.src = "/icons/lesezeichen-schwarz.png";
-    bookmark.value.alt = "You saved this question in your bookmarks";
+    bookmark.src = "/icons/lesezeichen-schwarze-form.png";
+    bookmark.alt = "You saved this question in your bookmarks";
     bookmark.classList.remove("bookmarks_unclicked");
     bookmark.classList.add("bookmarks_clicked");
   } else {
-    bookmark.value.src = "/icons/lesezeichen-schwarz.png";
-    bookmark.value.alt = "Bookmark this question";
-    bookmark.classList = "";
-    bookmark.classList = "bookmarks_unclicked";
+    bookmark.src = "/icons/lesezeichen-weiss.png";
+    bookmark.alt = "Bookmark this question";
+    bookmark.classList.remove("bookmarks_clicked");
+    bookmark.classList.add("bookmarks_unclicked");
   }
-};
+});
 
 //button to show or hide answer functionality
 
