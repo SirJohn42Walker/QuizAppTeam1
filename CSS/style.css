@@ -121,6 +121,10 @@ main div {
   width: 30px;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 .text {
   text-align: center;
 }
