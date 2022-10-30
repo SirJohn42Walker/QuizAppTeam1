@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
-    <link rel="stylesheet" href="CSS/headerAndFooter.css" />
-    <link rel="stylesheet" href="CSS/style.css" />
+    <!-- <link rel="stylesheet" href="CSS/style.css" /> -->
+    <link rel="stylesheet" href="CSS/components/darkmode-toggle.css">
+    <link rel="stylesheet" href="CSS/figmaStyle.css">
   </head>
-  <body>
+  <body style="height: 734px;">
     <header id="fixedHeader">
       <h1>Quiz App</h1>
     </header>
     <main class="main">
-      <!-- here goes the main content -->
       <section class="aboutMe">
         <img
           src="https://picsum.photos/200"
@@ -23,7 +23,7 @@
         <h2 class="aboutMe__Name text">Max Doe</h2>
         <section class="aboutMe__text text">
           <h3 class="aboutMe__text --heading text">About me:</h3>
-          <p class="text">
+          <p class="text aboutMe">
             I am a young freedom-fighter for the independence of common garden
             gnomes from the evil clutches of <em>Big Garden</em>. I hope one day
             all gnomes will be free from the horrible front gardens of the
@@ -31,6 +31,12 @@
             Quizea? Whatever...
           </p>
         </section>
+        <br>
+        <div class="savedQuestions">
+          <span class="quest grid"><span class=" addOrRemoveQ grid">Q</span>3</span>
+          <span class="savedQuest grid"><span class="addOrRemoveSavedQ grid">✅</span>0</span>
+        </div>
+        <br>
       </section>
       <section class="settings">
         <h2 class="settings__heading">Settings</h2>
@@ -41,6 +47,9 @@
           for="settings__darkmode-toggle"
         ></label>
       </section>
+      <div class="copyright">
+        <p>Copyright @QuizAppTeam1</p>
+      </div>
     </main>
     <footer id="fixedFooter">
       <nav>

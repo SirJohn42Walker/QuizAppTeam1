@@ -2,6 +2,8 @@
   width: 125px;
   height: 50px;
   position: relative;
+  margin-inline: auto;
+  margin-top: 20px;
   display: block;
   background: #ebebeb;
   border-radius: 50px;
