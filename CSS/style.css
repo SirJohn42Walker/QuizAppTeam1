@@ -5,6 +5,17 @@
   --accent-color: rgb(125, 189, 192);
   --highlight-color1: rgb(209, 204, 153);
   --highlight-color2: rgb(125, 189, 192);
+  --color-text: #191924;
+  --color-background: #bcdfe1;
+  --icon-color: #000000;
+}
+
+:root[data-color-scheme="dark"] {
+  --color-text: #fff6c7;
+  --color-background: #191924;
+  --accent-color: #47476b;
+  --bg-color: #191924;
+  --icon-color: #fff6c7;
 }
 
 body {
@@ -14,7 +25,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: var(--bg-color);
+  color: var(--color-text);
+  background-color: var(--color-background);
 }
 
 h1 {
@@ -51,7 +63,7 @@ nav ul {
 
 a {
   text-decoration: none;
-  color: black;
+  color: var(--icon-color);
 }
 
 .main {
