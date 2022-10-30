@@ -1,4 +1,4 @@
-const bookmark = document.querySelector('[data-js="bookmark"]');
+/*const bookmark = document.querySelector('[data-js="bookmark"]');
 
 bookmark.addEventListener("click", () => {
   if (bookmark.value.class === "bookmarks_unclicked") {
@@ -12,4 +12,4 @@ bookmark.addEventListener("click", () => {
     bookmark.value.class = "";
     bookmark.value.class = "bookmarks_unclicked";
   }
-});
+}); */
