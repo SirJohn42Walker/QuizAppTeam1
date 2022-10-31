@@ -1,0 +1,157 @@
+:root {
+  --textColor: #000000;
+  --clickedPageBorder: #48a3a3;
+  --showAnswerButton: #48a3a3;
+  --questionBorder: #d9d9d9;
+  --headerAndFooterColor: #6eb6c0;
+  --color-background: #bcdfe1;
+}
+
+:root[data-color-scheme="dark"] {
+  --textColor: #fff6c7;
+  --color-background: #191924;
+  --headerAndFooterColor: #47476b;
+  --bg-color: #191924;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0;
+  margin: 150px auto 300px auto;
+  color: var(--textColor);
+  background-color: var(--color-background);
+}
+
+/* Header */
+
+#fixedHeader {
+  background-color: var(--headerAndFooterColor);
+  height: 100px;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
+}
+
+/* main */
+
+.main {
+  display: grid;
+  place-content: center;
+  row-gap: 50px;
+}
+
+.questionBorder {
+  background-color: var(--questionBorder);
+  width: 308px;
+  height: 250px;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+hr {
+  border: dotted 4px;
+  border-bottom: none;
+  width: 50px;
+  margin: 0 auto;
+}
+
+.saveButton {
+  position: relative;
+  left: 120px;
+  bottom: 72px;
+  font-size: 50px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--questionBorder);
+}
+
+.question {
+  position: relative;
+  bottom: 40px;
+}
+
+.buttonShowAnswer {
+  background-color: var(--showAnswerButton);
+  position: relative;
+  bottom: 30px;
+  padding: 10px;
+}
+
+/* Footer */
+
+#fixedFooter {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 100px;
+  background-color: var(--headerAndFooterColor);
+  z-index: 1;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--headerAndFooterColor);
+  font-size: 30px;
+}
+
+/* 
+page 3 
+profile-page 
+*/
+
+.aboutMe__image {
+  border-radius: 50%;
+}
+
+.aboutMe {
+  padding: 20px;
+  line-height: 2;
+}
+
+.savedQuestions {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.quest,
+.savedQuest {
+  border: 2px solid black;
+  background-color: var(--questionBorder);
+  padding: 10px;
+  width: 100px;
+  height: 25px;
+}
+
+.icon {
+  width: 30px;
+  padding: 20px;
+  background-color: var(--bg-color);
+  border-radius: 100%;
+}
+
+.icon:hover {
+  border-radius: 25%;
+  transition: all 0.3s ease-in;
+  background-color: var(--highlight-color1);
+}
+.icon:active {
+  transition: all 0.3s ease-in;
+  background-color: rgb(231, 228, 197);
+  box-shadow: 3px 3px 7px rgb(10, 67, 94) inset;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+}
+
+.copyright {
+  background-color: var(--clickedPageBorder);
+}

@@ -9,25 +9,53 @@
     <link rel="stylesheet" href="CSS/style.css" />
     <script src="/JS/index.js"></script>
     <script type="module" src="/JS/bookmark.js"></script>
+    <script src="/JS/darkmode.js" defer></script>
+    <!-- <link rel="stylesheet" href="CSS/style.css" /> -->
+    <link rel="stylesheet" href="CSS/figmaStyle.css">
   </head>
   <body>
     <header id="fixedHeader">
-      <h1>Quiz Programm</h1>
+      <h1>Quiz App</h1>
     </header>
     <main class="main">
-      <!-- here goes the main content -->
+      <div class="questionBorder">
+        <h2 class="qHeader">Question 1</h3>
+          <hr>
+          <button class="saveButton">❎</button>
+        <!-- after clicking the button the emoji should change with ✅ using javaScript  -->
+        <div class="question">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est quaerat ratione, cum quos alias, explicabo ducimus vitae dolores beatae ut veritatis laboriosam tempora deserunt odit? Dolor sunt nihil ratione aperiam?</div>
+        <button class="buttonShowAnswer">Show Answer</button>
       </div>
-      <div class="testcard"></div>
-      <div class="testcard"></div>
-      <div class="testcard"></div>
-      <div class="testcard"></div>
-      <div class="testcard"></div>
+      <div class="questionBorder">
+        <h2 class="qHeader">Question 2</h2>
+        <hr>
+        <button class="saveButton">❎</button>
+        <!-- after clicking the button the emoji should change with ✅ using javaScript  -->
+        <div class="question">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est quaerat ratione, cum quos alias, explicabo ducimus vitae dolores beatae ut veritatis laboriosam tempora deserunt odit? Dolor sunt nihil ratione aperiam?</div>
+        <button class="buttonShowAnswer">Show Answer</button>
+      </div>
+      <div class="questionBorder">
+        <h2 class="qHeader">Question 3</h2>
+        <hr>
+        <button class="saveButton">❎</button>
+        <!-- after clicking the button the emoji should change with ✅ using javaScript  -->
+        <div class="question">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est quaerat ratione, cum quos alias, explicabo ducimus vitae dolores beatae ut veritatis laboriosam tempora deserunt odit? Dolor sunt nihil ratione aperiam?</div>
+        <button class="buttonShowAnswer">Show Answer</button>
+      </div>
     </main>
     <footer id="fixedFooter">
       <nav>
         <ul>
           <li><a href="index.html"><img src="icons/zuhause.png" alt="Home" class="icon"></a></li>
           <li><a href="bookmark.html"><img src="icons/archiv-black-box.png" alt="Bookmarks" class="icon"></a></li>
+          <li>
+            <a href="createcard.html"
+              ><img
+                src="icons/archiv-black-box.png"
+                alt="Bookmarks"
+                class="icon"
+            /></a>
+          </li>
           <li><a href="profile-page.html"><img src="icons/benutzerform.png" alt="Profile" class="icon"></a></li>
         </ul>
       </nav>
