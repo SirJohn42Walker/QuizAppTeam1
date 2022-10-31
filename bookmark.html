@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
-
+    <script src="/JS/index.js" defer></script>
+    <script type="module" src="/JS/bookmark.js" defer></script>
+    <link rel="stylesheet" href="CSS/headerAndFooter.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
     <script src="/JS/darkmode.js" defer></script>
-
-    <!-- <link rel="stylesheet" href="CSS/style.css" /> -->
     <link rel="stylesheet" href="CSS/figmaStyle.css" />
   </head>
   <body>
@@ -25,12 +26,19 @@
       </article>
 
       <div class="first">
-        <p class="Bookmarks">😀</p>
-        <p>
+        <img
+          src="/icons/lesezeichen-weiss.png"
+          alt="Bookmark this question"
+          class="bookmarks_unclicked"
+          data-js="bookmark"
+        />
+        <p class="hidden" data-js="question_text">
           Hier findest du deine gespeicherten Fragen. Bisher hast du keine
           Fragen gespeichert.
         </p>
-        <button class="Showanswer">Show Answer</button>
+        <button class="Showanswer" data-js="showanswer_button">
+          Show Answer
+        </button>
         <button class="Categories" id="Button_Option1">
           #HTML <button class="Categories">#Flexbox</button
           ><button class="Categories">#CSS</button>
@@ -38,12 +46,19 @@
       </div>
       <br />
       <div class="second">
-        <p class="Bookmarks">😀</p>
-        <p>
+        <img
+          src="/icons/lesezeichen-weiss.png"
+          alt="Bookmark this question"
+          class="bookmarks_unclicked"
+          data-js="bookmark"
+        />
+        <p class="hidden" data-js="question_text">
           Hier findest du deine gespeicherten Fragen. Bisher hast du keine
           Fragen gespeichert.
         </p>
-        <button class="Showanswer">Show Answer</button>
+        <button class="Showanswer" data-js="showanswer_button">
+          Show Answer
+        </button>
         <button class="Categories" id="Button_Option2">
           #HTML <button class="Categories">#Flexbox</button
           ><button class="Categories">#CSS</button>
@@ -51,7 +66,12 @@
       </div>
       <br />
       <div class="third">
-        <p class="Bookmarks">😀</p>
+        <img
+          src="/icons/lesezeichen-weiss.png"
+          alt="Bookmark this question"
+          class="bookmarks_unclicked"
+          data-js="bookmark"
+        />
         <p>
           Hier findest du deine gespeicherten Fragen. Bisher hast du keine
           Fragen gespeichert.
@@ -82,8 +102,8 @@
           <li>
             <a href="createcard.html"
               ><img
-                src="icons/archiv-black-box.png"
-                alt="Bookmarks"
+                src="icons/add-card.png"
+                alt="Write new questions"
                 class="icon"
             /></a>
           </li>
