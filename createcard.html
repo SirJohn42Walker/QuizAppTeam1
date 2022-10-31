@@ -15,7 +15,6 @@
     <header id="fixedHeader">
       <h1>Quiz App</h1>
     </header>
-
     <main class="main">
       <form data-js="form">
         <label for="question">Füge eine Frage hinzu:</label>
@@ -26,7 +25,10 @@
           maxlength="150"
           data-js="question"
         ></textarea>
-
+        <span
+          data-js="textCount"
+          style="position: absolute; top: 280px; left: 240px; right: 602px"
+        ></span>
         <label for="answer">Antwort:</label>
         <textarea
           id="answer"
@@ -35,6 +37,10 @@
           maxlength="150"
           data-js="answer"
         ></textarea>
+        <span
+          data-js="textCount2"
+          style="position: absolute; top: 280px; left: 135px; right: 0px"
+        ></span>
 
         <label for="tags">Tags:</label>
         <input id="tags" type="text" name="tags" data-js="tag" />
